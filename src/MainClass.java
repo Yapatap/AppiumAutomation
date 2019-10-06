@@ -1,9 +1,12 @@
 public class MainClass
 {
+    private int class_number = 20;
 
-    int a = 14;
-    public int getLocalNumber()
+    public int getClassNumber()
     {
-        return 14;
+        return class_number;
     }
 }
+
+
+

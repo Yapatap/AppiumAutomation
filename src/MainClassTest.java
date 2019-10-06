@@ -2,15 +2,14 @@ import org.junit.Test;
 
 public class MainClassTest
 {
-        MainClass Local = new MainClass();
+        MainClass number = new MainClass();
 @Test
-    public void testGetLocalNumber()
-    {
-
-        if (Local.a == 14) {
-            System.out.println("This is what we expected");
-        } else {
-            System.out.println("This is not what we expected");
-        }
+    public void testGetClassNumber() {
+    if (number.getClassNumber() < 45) {
+        System.out.println("True, because number is less then 45");
+    } else if (number.getClassNumber() > 45) {
+        System.out.println("False, because number is more than 45");
     }
+}
+
 }
