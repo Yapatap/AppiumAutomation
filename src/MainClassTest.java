@@ -1,15 +1,19 @@
+import org.junit.Assert;
 import org.junit.Test;
 
 public class MainClassTest
 {
-        MainClass number = new MainClass();
+        MainClass string = new MainClass();
 @Test
-    public void testGetClassNumber() {
-    if (number.getClassNumber() < 45) {
-        System.out.println("True, because number is less then 45");
-    } else if (number.getClassNumber() > 45) {
-        System.out.println("False, because number is more than 45");
+    public void testGetClassString() {
+    if (string.contains("Hello") | string.contains("hello")) {
+        System.out.println("Word Hello is here!");
     }
-}
+    if (!string.contains("Hello") | !string.contains("hello")) {
+        Assert.fail("Word Hello/hello is missing here (assert)");
+    }
+    }
 
 }
+
+
