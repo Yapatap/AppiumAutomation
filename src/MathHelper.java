@@ -1,5 +1,7 @@
 public class MathHelper
 {
+        public int simple_int = 7;
+        public static int static_int = 7;
         public int calc (int a, int b, char action)
     {
             if (action == '+')
