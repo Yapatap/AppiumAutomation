@@ -4,13 +4,17 @@ import org.junit.Test;
 public class MainClassTest
 {
         MainClass string = new MainClass();
+        String s = string.getClassString();
+
 @Test
     public void testGetClassString() {
-    if (string.contains("Hello") | string.contains("hello")) {
+    if (s.contains("Hello")) {
         System.out.println("Word Hello is here!");
+    } if (s.contains("hello")) {
+        System.out.println("Word hello is here!");
     }
-    if (!string.contains("Hello") | !string.contains("hello")) {
-        Assert.fail("Word Hello/hello is missing here (assert)");
+    if (!s.contains("Hello") | !s.contains("hello")) {
+        Assert.fail("Other words are missing here (assert)");
     }
     }
 
